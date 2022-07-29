@@ -1,19 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>销售大屏可视化</title>
     <script src="./js/echarts.min.js"></script>
     <script src="./js/flexible.js"></script>
     <script src="./js/jquery.min.js"></script>
-    <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/index.css">
-</head>
-<body>
-<div class="viewport">
-    <div class="column">1</div>
-    <div class="column">2</div>
-    <div class="column">3</div>
-</div>
-</body>
+    <script src="./js//index.js"></script>
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./fonts/icomoon.css" />
+    <link rel="stylesheet" href="./css//overiew.css" />
+    <link rel="stylesheet" href="./css//moniter.css" />
+  </head>
+  <body>
+    <div class="viewport">
+      <div class="column">
+        <!-- 1 -->
+        <div class="panel overview">
+          <div class="inner">
+            <ul>
+              <li>
+                <h4>30万</h4>
+                <span>
+                  <i class="icon-dot" style="color: #006cff"></i>
+                  当日销量
+                </span>
+              </li>
+              <li>
+                <h4>120万</h4>
+                <span>
+                  <i class="icon-dot" style="color: #6acca3"></i>
+                  当月销量
+                </span>
+              </li>
+              <li>
+                <h4>359万</h4>
+                <span>
+                  <i class="icon-dot" style="color: #6acca3"></i>
+                  当季销量
+                </span>
+              </li>
+              <li>
+                <h4>1,390万</h4>
+                <span>
+                  <i class="icon-dot" style="color: #ed3f35"></i>
+                  当年销量
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="panel moniter">
+          <div class="inner">
+            <ul class="tabs" id="tab">
+              <li>实时交易详情</li>
+              <li>实时注册详情</li>
+            </ul>
+            <div class="content">
+              <div class="head">
+                <div class="col">交易时间</div>
+                <div class="col">交易地区</div>
+                <div class="col">交易金额</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">2</div>
+      <div class="column">3</div>
+    </div>
+  </body>
 </html>

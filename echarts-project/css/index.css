@@ -1,7 +1,7 @@
 .viewport {
   display: flex;
-  min-width: 12.8rem;
-  max-width: 24rem;
+  min-width: 1024px;
+  max-width: 1920px;
   min-height: 780px;
   background: url("../image/logo.png") no-repeat;
   background-size: contain;
@@ -11,9 +11,25 @@
 }
 .column {
   flex: 3;
-  background: yellow;
+  /*background: yellow;*/
 }
 .column:nth-child(2) {
   flex: 4;
   background: pink;
+}
+.panel {
+  position: relative;
+  border: 20px solid red;
+  border-image-source: url("../image/border.png");
+  border-image-slice: 29 38 25 36;
+  border-width: -0.8125rem 2.375rem 1.5625rem 2.25rem;
+  margin-bottom: 0.25rem;
+}
+.panel .inner {
+  position: absolute;
+  top: 0.0625rem;
+  right: 2.375rem;
+  bottom: 1.5625rem;
+  left: 0.125rem;
+  width: 100%;
 }
