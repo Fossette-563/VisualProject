@@ -11,11 +11,11 @@
 }
 .column {
   flex: 3;
-  /*background: yellow;*/
+  /* background: yellow; */
 }
 .column:nth-child(2) {
   flex: 4;
-  background: pink;
+  /* background: pink; */
 }
 .panel {
   position: relative;
@@ -32,4 +32,9 @@
   bottom: 1.5625rem;
   left: 0.125rem;
   width: 100%;
+}
+h3 {
+  font-size: 0.25rem;
+  color: #fff;
+  font-weight: bold;
 }

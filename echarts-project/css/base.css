@@ -1,54 +1,59 @@
 /*清除元素默认的内外边距  */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 /*让所有斜体 不倾斜*/
 em,
 i {
-    font-style: normal;
+  font-style: normal;
 }
 /*去掉列表前面的小点*/
 li {
-    list-style: none;
+  list-style: none;
 }
 /*图片没有边框   去掉图片底侧的空白缝隙*/
 img {
-    border: 0; /*ie6*/
-    vertical-align: middle;
+  border: 0; /*ie6*/
+  vertical-align: middle;
 }
 /*让button 按钮 变成小手*/
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 /*取消链接的下划线*/
 a {
-    color: #666;
-    text-decoration: none;
+  color: #666;
+  text-decoration: none;
 }
 
 a:hover {
-    color: #e33333;
+  color: #e33333;
 }
 
 h4 {
-    font-weight: 400;
+  font-weight: 400;
 }
 /* 屏幕可视化最大宽度和最小宽度 */
-@media screen and(max-width : 1024px){
-    html{
-        font-size : 42.66px !important;
-    }
+@media screen and(max-width : 1024px) {
+  html {
+    font-size: 42.66px !important;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .chart .data {
+    width: 108px !important;
+  }
 }
 
-@media screen and(min-width : 1920px){
-    html{
-        font-size : 80px !important;
-    }
+@media screen and(min-width : 1920px) {
+  html {
+    font-size: 80px !important;
+  }
 }
 /* 背景图片 */
-body{
-    background: url("../image/bg.jpg") no-repeat;
-    background-size:cover;
+body {
+  background: url("../image/bg.jpg") no-repeat;
+  background-size: cover;
 }
